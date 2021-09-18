@@ -1,0 +1,194 @@
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    overflow: hidden;
+    background-color:hsl(225, 100%, 95%);
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat:repeat-x;
+}
+
+.card{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 27rem;
+    height: 44rem;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card_header{
+    position: relative;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.card_header_background_image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+} 
+
+.card_body{
+    position: relative;
+    text-align: center;
+    top: 15rem;
+}
+
+.text{
+    position: relative;
+    color: grey;
+    width: 71%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.plan{
+    position: relative;
+    width: 80%;
+    top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#eef0f5ee;
+    border-radius: 20px;
+}
+
+.music-icon{
+    position: relative;
+    top: 0.9rem;
+    margin: 0;
+}
+
+.plan-text{
+    position: relative;
+    display: inline-block;
+    top: 0.5rem;
+    margin-right: 9rem;
+    padding: 0;
+}
+
+.plan-link{
+    position: relative;
+    top:-2.25rem;
+    right: -8rem;
+    color:mediumblue;
+}
+
+.payment{
+    display:block;
+    position:relative;
+    top: 5rem;
+    color: white;
+    background-color:rgb(22, 78, 182) ;
+    font-weight: 900;
+    width: 80%;
+    height: 3.5rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow:0px 10px 20px rgba(22, 78, 182, 0.274);
+            box-shadow:0px 10px 20px rgba(22, 78, 182, 0.274);
+}
+
+.cancel{
+    position:relative;
+    top: 7.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: grey;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bold{
+    font-weight: 900;
+}
+
+.attribution a { 
+    color: #382ae1;
+}
+
+.plan-text p{
+    margin: 10px;
+}
+
+.plan-link:hover{
+    color: rgb(108, 108, 235);
+}
+
+.payment:hover{
+    background-color: rgb(108, 108, 235);
+}
+
+.cancel:hover{
+    color:black;
+}
+
+@media (max-width: 600px) {
+    body{
+        background-image: url(/images/pattern-background-mobile.svg);
+    }
+
+    .card{
+        top: 10px;
+        width: 21rem;
+        height: 32em;
+    }
+
+    .card_body{
+        top: 10rem;
+    }
+
+    .text{
+        width: 83%;
+    }
+
+    .plan{
+        width: 83%;
+        top: 0rem;
+        background-color:#fafafa;
+    }
+
+    .music-icon{
+        top: 0.24rem;
+        left: -1rem;
+    }
+    
+    .plan-text{
+        top: 0;
+        margin-right: 0.5rem;
+    }
+    
+    .plan-link{
+        top:-1rem;
+        right: -0.5rem;
+    }
+
+    .payment{
+        top: 1.5rem;
+    }
+
+    .cancel{
+        top: 3rem;
+    }
+
+    .attribution {
+        bottom: 0.5rem;
+    }
+  }
